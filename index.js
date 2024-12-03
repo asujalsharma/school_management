@@ -12,6 +12,11 @@ app.use('/api', schoolRoutes);
 
 const PORT = process.env.PORT || 3000;
 
+
+
+app.use("/",(req,res)=>{
+    res.send("HElLO");})
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });

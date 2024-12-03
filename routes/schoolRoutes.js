@@ -60,6 +60,7 @@ router.get('/listSchools', (req, res) => {
             return { ...school, distance };
         }).sort((a, b) => a.distance - b.distance);
 
+        console.log(sortedSchools);
         res.json(sortedSchools);
     });
 });
